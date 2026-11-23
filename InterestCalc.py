@@ -4,18 +4,18 @@
 
 p = float(input("Enter your initial balance : "))
 while p < 0:
-    print("The value can not be negative or a zero")
+    print("The value can not be negative ")
     p = float(input("Enter your initial balance : "))
 
 
 r = float(input("Enter the interest rate : "))
 while r < 0:
-    print("The value can not be negative or a zero")
+    print("The value can not be negative ")
     r = float(input("Enter the interest rate : "))
 
 t = int(input("Enter the time period in years : "))
 while t < 0:
-    print("The value can not be negative or a zero")
+    print("The value can not be negative ")
     t = int(input("Enter the time period in years : "))
 
 
