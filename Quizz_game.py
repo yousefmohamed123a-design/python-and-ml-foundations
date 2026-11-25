@@ -31,15 +31,15 @@ cnt = 0
 score = 0
 for quest, cnt in zip(questions, range(5)):
     print("------------\n")
-    print(quest, "\n")
+    print(f"Question {cnt + 1} : ")
 
-    print(f"Question {cnt + 1}")
+    print(quest, "\n")
     for option in options[cnt]:
         print(option)
 
     ans = input("\nEnter your answer letter : ")
     if ans.upper() == answers[cnt]:
-        print(f"Correct, you are a genius {ans}")
+        print(f"\nCorrect, you are a genius {ans}")
         score += 1
         time.sleep(2)
     else:
